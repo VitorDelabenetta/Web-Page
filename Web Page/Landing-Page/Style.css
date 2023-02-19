@@ -1,0 +1,182 @@
+/*
+Estilização da "Landing Page".
+Possui total responsividade com outros tamanhos de tela.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+    background-color: #232323;
+    color: #FBF8F3;
+    font-family: 'Noto Sans', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+a {
+    color: #FBF8F3;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #6F5ADC;
+    transition: 0.35s all;
+}
+
+.static {
+    color: crimson;
+}
+
+.subscribe-btn {
+    border: 2px solid #6F5ADC;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+.subscribe-btn:hover {
+    background-color: #6F5ADC;
+    color: #FBF8F3;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+#color-logo {
+    color: crimson;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+span {
+    color: #6F5ADC;
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+    font-weight: 200;
+}
+
+img {
+    width: 600px;
+    margin-left: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    background: #fbf8f3b9;
+    color: #232323;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+}
+
+input::placeholder {
+    color: #646464;
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 50%;
+    background-color: #6F5ADC;
+    color: #FBF8F3;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+/* Resposividade da página */
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    p {
+        margin-left: 20px;
+    }
+
+    form {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    input {
+        align-self: center;
+    }
+
+    form [type="submit"] {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    img {
+        display: none;
+    }
+
+    ul {
+        text-align: center;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Contact Form</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0"/>
+    <meta name="description" content="Formulário para realizar o envio de mensagens através do E-mail.">
+    <meta name="author" content="Gabriel Delabenetta">
+
+    <link rel="stylesheet" type="text/css" href="/Contact-Form/Style.css">
+</head>
+
+    <!-- Esta é uma página que simula um formulário de envio de e-mail -->
+
+<body>
+    <form onsubmit="event.preventDefault(); validateForm()">
+        <h1>Mande-nos uma mensagem</h1>
+
+        <label for="name">Nome</label>
+        <input type="text" id="name" placeholder="Seu Nome">
+        <small class="error"></small>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="Exemplo@gmail.com">
+        <small class="error"></small>
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" placeholder="Digite sua mensagem" rows="6"></textarea>
+        <small class="error"></small>
+
+        <div class="center">
+            <input type="submit" value="Enviar mensagem">
+            <p id="success"></p>
+        </div>
+    </form>
+
+    <script src="/Contact-Form/Script.js"></script>
+
+    <!-- Fonte referencial para a estrutura do formulário: https://youtu.be/QT1ya4Ut40o -->
+
+</body>
+</html>

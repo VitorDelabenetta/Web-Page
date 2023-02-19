@@ -1,0 +1,209 @@
+/*
+Estilização da "HomePage".
+ALERTA: esta página não possui responsividade, sendo visualizável apenas em dispositivos maiores.
+
+
+Paleta de cores do projeto:
+    #6F5ADC (roxo)
+    #232323 (escuro)
+    #ACACAC (cinza)
+    #FBF8F3 / #FFF0EB (claro)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.background-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url("/Imagens/Castle.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.menu {
+    width: 100%;
+    height: 100px;
+    background-color: #232323;
+    position: relative;
+}
+
+.menu-left {
+    width: 20%;
+    line-height: 100px;
+    float: left;
+}
+
+.menu-left h4 {
+    padding-left: 70px;
+    font-weight: bold;
+    color: #fbf8f3;
+    font-size: 22px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.left-logo {
+    color: crimson;
+}
+
+.menu-right {
+    width: 55%;
+    height: 100px;
+    float: right;
+}
+
+.menu-right ul {
+    margin-left: 200px;
+}
+
+.menu-right ul li {
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif ;
+    list-style: none;
+    font-size: 15px;
+    color: #fbf8f3;
+    font-weight: bold;
+    line-height: 100px;
+    margin-left: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu-right ul li:hover {
+    color: #6F5ADC;
+    text-decoration: none;
+}
+
+#first {
+    color: crimson; 
+}
+
+#first:hover { color: #6F5ADC; }
+
+/* Links */
+a:visited { color: #fbf8f3; }
+a:hover { color: #6F5ADC; }
+
+.text {
+    width: 100%;
+    margin-top:185px ;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FBF8F3;
+
+}
+
+/* Sessão do texto principal, com dois links */
+
+.text h4 {
+    font-size: 14px;
+    font-family: 'open sans', sans-serif;
+}
+
+.text h1 {
+    font-size: 62px;
+    font-family: 'Noto Sans', sans-serif ;
+    font-weight: 700px;
+    margin: 14px 0px;
+}
+
+.text h3 {
+    font-size: 15px;
+    font-family: 'open sans', sans-serif;
+}
+
+.button {
+    background-color: rgba(255,255,255, 0.164);
+    color: #FBF8F3;
+    font-family: 'Noto Sans', sans-serif ;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 40px;
+    width: 150px;
+    margin-top: 25px;
+    border: 3px solid #FBF8F3;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #FBF8F3;
+    color: #232323;
+}
+
+/* Alerta para impedir a má visualização da página - devido ausência de responsividade */
+
+.alert {
+    display: none;
+    margin: auto;
+}
+
+.alert-span {
+    text-decoration: underline;
+}
+
+/* Media para ajustar ao tamanho de tela */
+
+@media only screen and (max-width: 1400px) {
+    #first {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .background-image {
+        background-size: 150%;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .menu-right {
+        display: none;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .alert {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        width: 450px;
+        padding: 25px;
+        margin-top: 10vh;
+
+        background: radial-gradient(#232323d7, #232323);
+        border-radius: 15px;
+        border: 2px crimson solid;
+        font-family: "Noto Sans", sans-serif;
+        text-align: center;
+        line-height: 1.5;
+        letter-spacing: 2px;
+
+        animation: alert-color 6s infinite;
+    }
+
+    @keyframes alert-color {
+        0% {
+            color: #FBF8F3;
+        }
+        50% {
+            color: #6F5ADC;
+        }
+        100% {
+            color: #FBF8F3;
+        }
+    }
+}

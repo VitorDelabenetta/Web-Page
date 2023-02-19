@@ -1,0 +1,107 @@
+/* 
+Estilização do "Form". 
+Possui capacidade Responsiva, ou seja, é visualizável em outros dispositivos.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Noto Sans", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url("/Imagens/Tower.jpg");
+    margin: 0;
+    background-size: 100%;
+}
+
+form {
+    max-width: 580px;
+    width: 90%;
+    background: #232323;
+    margin: 10vh auto 0 auto;
+    padding: 30px 35px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    color: #FBF8F3;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+    color: #FBF8F3;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: rgba(255, 240, 235, 0.7);
+    color: #232323;
+    font-size: 16px;
+}
+
+/* Barra lateral da Mensagem */
+textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(111, 90, 220, 0.8);
+}
+
+textarea::selection {
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
+.center {
+    text-align: center;
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 250px;
+    border-radius: 15px;
+    border: 3px solid #6F5ADC;
+    background-color: #232323;
+    cursor: pointer;
+
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    color: #FBF8F3;
+    font-size: 14px;
+    transition: background-color 0.2s linear;
+}
+
+input[type="submit"]:hover {
+    color: #FFF0EB;
+    background-color: #6F5ADC;
+}
+
+.error {
+    color: crimson;
+}
+
+.error-border {
+    border-bottom: 1px solid crimson;
+}
+
+#success {
+    margin-top: 15px;
+    color: #0ed7b2;
+}

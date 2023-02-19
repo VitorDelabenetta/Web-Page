@@ -1,0 +1,77 @@
+/*
+Estilização da "Error 404".
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #8500FF, #5ACAFF);
+    /* Se por algum motivo a imagem de fundo não renderizar, teremos um fundo colorido */
+    height: 100vh;
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/Imagens/Woods-Background.jpg");
+    background-size: 140%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+#container .content {
+    max-width: 600px;
+    text-align: center;
+}
+
+#container .content h2 {
+    font-size: 18vw;
+    color: #FBF8F3;
+    line-height: 1em;
+}
+
+#container .content h4 {
+    position: relative;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #232323;
+    background: #FFF0EB;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#container .content p {
+    color: #FBF8F3;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+#container .content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    color: #FFF0EB;
+    text-decoration: none;
+    margin-top: 25px;
+    border-radius: 20px;
+
+    background-color: rgba(255,255,255, 0.164);
+    border: 3px solid #FFF0EB;
+    cursor: pointer;
+}
+
+#container .content a:hover { background: #FBF8F3; color: #232323; }
