@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulário</title>
+    <meta name="description" content="Formulário para realizar o envio de mensagens através do E-mail.">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0"/>
+    <meta name="author" content="Gabriel Delabenetta">
+    <link rel="stylesheet" type="text/css" href="../assets/estilos/padroes.css">
+    <link rel="stylesheet" type="text/css" href="../assets/estilos/formulario.css">
+</head>
+<body>
+    <main>
+        <form onsubmit="event.preventDefault(); validarFormulario()" autocomplete="off">
+
+            <h2 class="subtitulo">Enviar mensagem</h2>
+
+            <label for="name" class="texto">Nome</label>
+            <input type="text" id="name" placeholder="Seu Nome" class="texto-pequeno">
+            <small class="incorreto texto-pequeno"></small>
+
+            <label for="email" class="texto">E-mail</label>
+            <input type="email" id="email" placeholder="exemplo@gmail.com" class="texto-pequeno">
+            <small class="incorreto texto-pequeno"></small>
+
+            <label for="message" class="texto">Mensagem</label>
+            <textarea id="message" placeholder="Digite sua mensagem" rows="6" class="texto-pequeno"></textarea>
+            <small class="incorreto texto-pequeno"></small>
+
+            <div class="botao">
+                <input type="submit" value="Enviar mensagem" class="texto">
+                <p id="sucesso" class="texto-pequeno"></p>
+            </div>
+        </form>
+    </main>
+    <script src="../assets/scripts/formulario.js"></script>
+
+    <!-- Fonte referencial para a estrutura do formulário: https://youtu.be/QT1ya4Ut40o -->
+
+</body>
+</html>

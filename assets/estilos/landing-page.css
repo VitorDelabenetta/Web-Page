@@ -1,0 +1,136 @@
+body {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+/* Cabeçalho */
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+.cabecalho-esquerda {
+    grid-column: 2 / 5;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho-esquerda span {
+    color: var(--roxo);
+}
+
+.cabecalho-direita {
+    grid-column: 5 / 12;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cabecalho-direita ul li {
+    display: inline;
+    list-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.cabecalho-direita ul li a {
+    color: var(--branco);
+}
+
+.cabecalho-direita ul li a:hover {
+    color: var(--roxo);
+    transition: color 200ms ease;
+}
+
+/* Botão Inscrever-se */
+
+#inscrever {
+    padding: 10px;
+    border: 3px solid var(--branco);
+    border-radius: 15px;
+}
+
+#inscrever:hover {
+    background-color: var(--roxo);
+    color: var(--branco);
+    border-color: var(--roxo);
+    transition: all 200ms ease;
+
+    & a:hover {
+        color: var(--branco);
+    }
+}
+
+/* Principal */
+
+main {
+    height: calc(100vh - 100px);
+    width: 100vw;
+}
+
+.conteudo-esquerda {
+    grid-column: 2 / 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo-esquerda p:first-child {
+    text-transform: uppercase;
+    color: var(--roxo);
+}
+
+.conteudo-esquerda .texto-suave {
+    width: 33vw;
+    text-align: justify;
+}
+
+.conteudo-direita {
+    grid-column: 7 / 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-direita img {
+    width: 100%;
+}
+
+/* Formulário */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 33vw;
+    margin: 45px 0;
+}
+
+input {
+    padding: 15px 20px;
+    border-radius: 15px;
+    outline: none;
+    background: none;
+    border: 3px solid var(--roxo);
+    color: var(--branco);
+    letter-spacing: 0.75px;
+}
+
+input::placeholder {
+    color: var(--cinza);
+}
+
+
+form button {
+    height: 50px;
+    width: 50%;
+    color: var(--branco);
+    background-color: var(--roxo);
+    border-radius: 15px;
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+}

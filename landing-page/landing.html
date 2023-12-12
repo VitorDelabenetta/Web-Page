@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Landing Page</title>
+    <meta name="description" content="Sessão da página que serve para demostrar uma inscrição em uma Newsletter.">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0"/>
+    <meta name="author" content="Gabriel Delabenetta">
+    <link rel="stylesheet" type="text/css" href="../assets/estilos/padroes.css">
+    <link rel="stylesheet" type="text/css" href="../assets/estilos/landing-page.css">
+</head>
+<body>
+    <header class="template-grid">
+        <div class="cabecalho-esquerda">
+            <h2 class="texto-logomarca">Página <span>Publicitária</span></h2>
+        </div>
+        <nav class="cabecalho-direita">
+            <ul>
+                <li class="texto"><a href="../index.html">Home</a></li>
+                <li class="texto"><a href="https://github.com/VitorDelabenetta" target="_blank">Projetos</a></li>
+                <li class="texto"><a href="../formulario/form.html">Contato</a></li>
+                <li class="texto" id="inscrever"><a href="#">Contratou algum serviço?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="template-grid">
+        <div class="conteudo-esquerda">
+            <p class="texto">Cadastre-se agora na</p>
+            <h1 class="titulo">Front-Letter</h1>
+            <p class="texto-suave">Quer saber de projetos que estão em andamento ou receber dicas em primeira mão sobre o universo da programação Front-End? Não perca tempo! Cadastre-se agora na Digital Front-Letter.</p>
+            <form autocomplete="off">
+                <input type="text" placeholder="Seu Nome" id="nome" required class="texto">
+                <input type="email" placeholder="E-mail" id="email" required class="texto">
+                <button type="submit" class="texto">↪ Inscrever-se</button>
+            </form>
+        </div>
+        <div class="conteudo-direita">
+            <img src="../assets/imagens/newsletter.svg">
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* coloração */
+    --branco: #FBF8F3;
+    --preto: #232323;
+    --preto-transparente: #000000a5;
+    --cinza: #ACACAC;
+    --cinza-transparente: #FBF8F320;
+    --roxo: #6F5ADC;
+    --vermelho: #DC143C;
+    --verde: #0ED7B2;
+    --gradiente: linear-gradient(#0000008c, rgba(0, 0, 0, 0.55));
+    --sombra: 0px 4px 4px 0px #23232340;
+    /* fonte */
+    --fonte: 'Noto Sans', sans-serif;
+}
+
+::selection {
+    background-color: var(--cinza);
+    color: var(--branco);
+}
+
+/* Fontes */
+
+.texto {
+    font-family: var(--fonte);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.texto-suave {
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.texto-pequeno {
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.texto-logomarca {
+    font-family: var(--fonte);
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.titulo {
+    font-family: var(--fonte);
+    font-weight: 700;
+    font-size: 62px;
+}
+
+.subtitulo {
+    font-family: var(--fonte);
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+/* Grid - Posicionamento */
+
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100vw;
+}
